@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Expense Tracker</h1>
+
+    <!-- Form to Add Expense -->
+    <form id="expense-form">
+        <input type="text" id="name" placeholder="Expense Name" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <input type="text" id="category" placeholder="Category" required>
+        <input type="date" id="date" required>
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <!-- Expenses Table -->
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="expense-list"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
